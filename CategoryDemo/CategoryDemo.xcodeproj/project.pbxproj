@@ -13,6 +13,7 @@
 		60F94C3A1E6D22BD0074AD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C381E6D22BD0074AD8F /* Main.storyboard */; };
 		60F94C3C1E6D22BD0074AD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C3B1E6D22BD0074AD8F /* Assets.xcassets */; };
 		60F94C3F1E6D22BD0074AD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C3D1E6D22BD0074AD8F /* LaunchScreen.storyboard */; };
+		60F94C4A1E6D24680074AD8F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C491E6D24680074AD8F /* NSArray+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		60F94C3B1E6D22BD0074AD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60F94C3E1E6D22BD0074AD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60F94C401E6D22BD0074AD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F94C471E6D240E0074AD8F /* EYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EYCategory.h; sourceTree = "<group>"; };
+		60F94C481E6D24680074AD8F /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		60F94C491E6D24680074AD8F /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		60F94C2E1E6D22BD0074AD8F /* CategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				60F94C461E6D235C0074AD8F /* Category */,
 				60F94C321E6D22BD0074AD8F /* AppDelegate.h */,
 				60F94C331E6D22BD0074AD8F /* AppDelegate.m */,
 				60F94C351E6D22BD0074AD8F /* ViewController.h */,
@@ -77,6 +82,16 @@
 				60F94C301E6D22BD0074AD8F /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60F94C461E6D235C0074AD8F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				60F94C471E6D240E0074AD8F /* EYCategory.h */,
+				60F94C481E6D24680074AD8F /* NSArray+Log.h */,
+				60F94C491E6D24680074AD8F /* NSArray+Log.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +120,7 @@
 		60F94C241E6D22BC0074AD8F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = EY;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = lieryang;
 				TargetAttributes = {
@@ -152,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
+				60F94C4A1E6D24680074AD8F /* NSArray+Log.m in Sources */,
 				60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */,
 				60F94C311E6D22BD0074AD8F /* main.m in Sources */,
 			);
@@ -312,6 +329,7 @@
 				60F94C451E6D22BD0074AD8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
