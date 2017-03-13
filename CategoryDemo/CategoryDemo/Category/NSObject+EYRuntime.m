@@ -11,8 +11,8 @@
 
 @implementation NSObject (EYRuntime)
 
-+ (NSArray *)ey_objectsWithArray:(NSArray *)array {
-    
++ (NSArray *)ey_objectsWithArray:(NSArray *)array
+{
     if (array.count == 0) {
         return nil;
     }
@@ -20,27 +20,29 @@
     // 断言是字典数组
     NSAssert([array[0] isKindOfClass:[NSDictionary class]], @"必须传入字典数组");
     
-    // 0. 获得属性数组
+    // 1. 获得属性数组
     NSArray *list = [self ey_propertiesList];
     
-    // 1. 遍历数组
+    // 2. 遍历数组
     NSMutableArray *arrayM = [NSMutableArray array];
-    for (NSDictionary *dict in array) {
-        
-        // 2. 创建对象
+    for (NSDictionary *dictionary in array)
+    {
+        // 3. 创建对象
         id obj = [self new];
         
-        // 3. 遍历字典
-        for (NSString *key in dict) {
+        // 4. 遍历字典
+        for (NSString *key in dictionary)
+        {
             // 判断字典中的 key 是否在成员变量中存在
-            if (![list containsObject:key]) {
+            if (![list containsObject:key])
+            {
                 continue;
             }
             
-            [obj setValue:dict[key] forKey:key];
+            [obj setValue:dictionary[key] forKey:key];
         }
         
-        // 4. 将对象添加到数组
+        // 5. 将对象添加到数组
         [arrayM addObject:obj];
     }
     
@@ -49,12 +51,13 @@
 
 void *propertiesKey = "propertiesList";
 
-+ (NSArray *)ey_propertiesList {
-    
++ (NSArray *)ey_propertiesList
+{
     // 获取关联对象
     NSArray *result = objc_getAssociatedObject(self, propertiesKey);
     
-    if (result != nil) {
+    if (result != nil)
+    {
         return result;
     }
     
@@ -64,8 +67,8 @@ void *propertiesKey = "propertiesList";
     // 遍历所有的属性
     NSMutableArray *arrayM = [NSMutableArray array];
     
-    for (unsigned int i = 0; i < count; i++) {
-        
+    for (unsigned int i = 0; i < count; i++)
+    {
         objc_property_t pty = list[i];
         
         // 获取 ivar 名称
@@ -85,12 +88,13 @@ void *propertiesKey = "propertiesList";
 
 void *ivarsKey = "ivarsList";
 
-+ (NSArray *)ey_ivarsList {
-    
++ (NSArray *)ey_ivarsList
+{
     // 获取关联对象
     NSArray *result = objc_getAssociatedObject(self, ivarsKey);
     
-    if (result != nil) {
+    if (result != nil)
+    {
         return result;
     }
     
