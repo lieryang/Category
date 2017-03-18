@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EYCategory.h"
+#import "EYHTTPManager.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    EYHTTPManager * manager1 = [EYHTTPManager sharedsharedHTTPManager];
+    EYHTTPManager * manager2 = [[EYHTTPManager alloc] init];
+    NSLog(@"%p",manager1);
+    NSLog(@"%p",manager2);
 }
 
 
