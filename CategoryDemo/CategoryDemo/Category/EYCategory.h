@@ -2,4 +2,5 @@
 #import "UILabel+EYAddition.h"
 #import "NSObject+EYRuntime.h"
 #import "NSString+EYAddition.h"
+#import "UIButton+EYAddition.h"
 
