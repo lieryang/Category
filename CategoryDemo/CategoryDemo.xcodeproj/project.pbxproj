@@ -11,6 +11,7 @@
 		181B31431E76D3DA006ACFF8 /* NSString+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31421E76D3DA006ACFF8 /* NSString+EYAddition.m */; };
 		181B31461E7CF9FD006ACFF8 /* UIButton+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31451E7CF9FD006ACFF8 /* UIButton+EYAddition.m */; };
 		181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31481E7D1213006ACFF8 /* EYHTTPManager.m */; };
+		6054A6951EBC4C50002921EA /* UIImage+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6054A6941EBC4C50002921EA /* UIImage+EYAddition.m */; };
 		60F94C311E6D22BD0074AD8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C301E6D22BD0074AD8F /* main.m */; };
 		60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C331E6D22BD0074AD8F /* AppDelegate.m */; };
 		60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C361E6D22BD0074AD8F /* ViewController.m */; };
@@ -31,6 +32,8 @@
 		181B31471E7D1213006ACFF8 /* EYHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYHTTPManager.h; sourceTree = "<group>"; };
 		181B31481E7D1213006ACFF8 /* EYHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYHTTPManager.m; sourceTree = "<group>"; };
 		181B314A1E7D122B006ACFF8 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		6054A6931EBC4C50002921EA /* UIImage+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+EYAddition.h"; sourceTree = "<group>"; };
+		6054A6941EBC4C50002921EA /* UIImage+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EYAddition.m"; sourceTree = "<group>"; };
 		60F94C2C1E6D22BD0074AD8F /* CategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F94C301E6D22BD0074AD8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60F94C321E6D22BD0074AD8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				181B31421E76D3DA006ACFF8 /* NSString+EYAddition.m */,
 				181B31441E7CF9FD006ACFF8 /* UIButton+EYAddition.h */,
 				181B31451E7CF9FD006ACFF8 /* UIButton+EYAddition.m */,
+				6054A6931EBC4C50002921EA /* UIImage+EYAddition.h */,
+				6054A6941EBC4C50002921EA /* UIImage+EYAddition.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
 				60F94C4A1E6D24680074AD8F /* NSArray+Log.m in Sources */,
 				181B31401E7585CD006ACFF8 /* NSObject+EYRuntime.m in Sources */,
+				6054A6951EBC4C50002921EA /* UIImage+EYAddition.m in Sources */,
 				60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */,
 				60F94C4D1E6D259E0074AD8F /* UILabel+EYAddition.m in Sources */,
 				60F94C311E6D22BD0074AD8F /* main.m in Sources */,
