@@ -1,8 +1,11 @@
+#import "Singleton.h"
 #import "NSArray+Log.h"
+#import "NSMutableArray+EYAddition.h"
 #import "UILabel+EYAddition.h"
 #import "NSObject+EYRuntime.h"
 #import "NSString+EYAddition.h"
 #import "UIButton+EYAddition.h"
+#import "UIImage+EYAddition.h"
 
 // 1、获取通知中心
 #define EYNotificationCenter [NSNotificationCenter defaultCenter]
@@ -96,3 +99,12 @@
 
 // clear背景颜色
 #define EYClearColor [UIColor clearColor]
+
+//13.字符串是否为空
+#define EYStringIsEmpty(string) ([string isKindOfClass:[NSNull class]] || string.length == 0 ? YES : NO)
+
+//14.数组是否为空
+#define EYArrayIsEmpty(array) ([array isKindOfClass:[NSNull class]] || array.count == 0 ? YES : NO)
+
+//15.字典是否为空
+#define EYDictionaryIsEmpty(dictionary) ([dictionary isKindOfClass:[NSNull class]] || dictionary.allKeys == 0 ? YES : NO)
