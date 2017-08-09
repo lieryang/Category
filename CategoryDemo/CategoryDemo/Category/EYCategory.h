@@ -118,3 +118,6 @@
     }
 
 #define dispatch_async_main(block)      dispatch_async(dispatch_get_main_queue(), block)
+
+//17.获取设备当前语言
+#define EYDeviceLanguage [NSLocale preferredLanguages].firstObject

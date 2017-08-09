@@ -20,6 +20,8 @@
 		60F94C3F1E6D22BD0074AD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C3D1E6D22BD0074AD8F /* LaunchScreen.storyboard */; };
 		60F94C4A1E6D24680074AD8F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C491E6D24680074AD8F /* NSArray+Log.m */; };
 		60F94C4D1E6D259E0074AD8F /* UILabel+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C4C1E6D259E0074AD8F /* UILabel+EYAddition.m */; };
+		CC4084B01F3A98BA00A56FEC /* EYDeviceInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4084AF1F3A98BA00A56FEC /* EYDeviceInformation.m */; };
+		CC4084B51F3AA71400A56FEC /* getgateway.c in Sources */ = {isa = PBXBuildFile; fileRef = CC4084B21F3AA71400A56FEC /* getgateway.c */; };
 		CC5BD6241F39572E00B70F03 /* NSMutableArray+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD6231F39572E00B70F03 /* NSMutableArray+EYAddition.m */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,11 @@
 		60F94C491E6D24680074AD8F /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		60F94C4B1E6D259E0074AD8F /* UILabel+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+EYAddition.h"; sourceTree = "<group>"; };
 		60F94C4C1E6D259E0074AD8F /* UILabel+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+EYAddition.m"; sourceTree = "<group>"; };
+		CC4084AE1F3A98BA00A56FEC /* EYDeviceInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYDeviceInformation.h; sourceTree = "<group>"; };
+		CC4084AF1F3A98BA00A56FEC /* EYDeviceInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYDeviceInformation.m; sourceTree = "<group>"; };
+		CC4084B21F3AA71400A56FEC /* getgateway.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getgateway.c; sourceTree = "<group>"; };
+		CC4084B61F3AA94A00A56FEC /* getgateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getgateway.h; sourceTree = "<group>"; };
+		CC4084B71F3AAA8100A56FEC /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
 		CC5BD6221F39572E00B70F03 /* NSMutableArray+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+EYAddition.h"; sourceTree = "<group>"; };
 		CC5BD6231F39572E00B70F03 /* NSMutableArray+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+EYAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +91,7 @@
 		60F94C2E1E6D22BD0074AD8F /* CategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CC4084AC1F3A988E00A56FEC /* Tool */,
 				60F94C461E6D235C0074AD8F /* Category */,
 				60F94C321E6D22BD0074AD8F /* AppDelegate.h */,
 				60F94C331E6D22BD0074AD8F /* AppDelegate.m */,
@@ -131,6 +139,34 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		CC4084AC1F3A988E00A56FEC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				CC4084AD1F3A988E00A56FEC /* Device */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		CC4084AD1F3A988E00A56FEC /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				CC4084B11F3AA71400A56FEC /* Route */,
+				CC4084AE1F3A98BA00A56FEC /* EYDeviceInformation.h */,
+				CC4084AF1F3A98BA00A56FEC /* EYDeviceInformation.m */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
+		CC4084B11F3AA71400A56FEC /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				CC4084B71F3AAA8100A56FEC /* route.h */,
+				CC4084B61F3AA94A00A56FEC /* getgateway.h */,
+				CC4084B21F3AA71400A56FEC /* getgateway.c */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,7 +199,7 @@
 				TargetAttributes = {
 					60F94C2B1E6D22BD0074AD8F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = PYJ3M9TJFN;
+						DevelopmentTeam = VW4HM9QZFV;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -208,6 +244,7 @@
 				181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */,
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
 				60F94C4A1E6D24680074AD8F /* NSArray+Log.m in Sources */,
+				CC4084B01F3A98BA00A56FEC /* EYDeviceInformation.m in Sources */,
 				181B31401E7585CD006ACFF8 /* NSObject+EYRuntime.m in Sources */,
 				6054A6951EBC4C50002921EA /* UIImage+EYAddition.m in Sources */,
 				60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */,
@@ -215,6 +252,7 @@
 				CC5BD6241F39572E00B70F03 /* NSMutableArray+EYAddition.m in Sources */,
 				60F94C311E6D22BD0074AD8F /* main.m in Sources */,
 				181B31461E7CF9FD006ACFF8 /* UIButton+EYAddition.m in Sources */,
+				CC4084B51F3AA71400A56FEC /* getgateway.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PYJ3M9TJFN;
+				DEVELOPMENT_TEAM = VW4HM9QZFV;
 				INFOPLIST_FILE = CategoryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.CategoryDemo;
@@ -346,7 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PYJ3M9TJFN;
+				DEVELOPMENT_TEAM = VW4HM9QZFV;
 				INFOPLIST_FILE = CategoryDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.CategoryDemo;

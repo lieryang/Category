@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "EYCategory.h"
 #import "EYHTTPManager.h"
+#import "EYDeviceInformation.h"
 
 @interface ViewController ()
 
@@ -21,8 +22,20 @@
     // Do any additional setup after loading the view, typically from a nib.
     EYHTTPManager * manager1 = [EYHTTPManager sharedsharedHTTPManager];
     EYHTTPManager * manager2 = [[EYHTTPManager alloc] init];
-    NSLog(@"%p",manager1);
-    NSLog(@"%p",manager2);
+    NSLog(@"manager1---%p",manager1);
+    NSLog(@"manager2---%p",manager2);
+    NSLog(@"*******************测试单例结束*********************");
+
+    NSLog(@"UUID---%@", [EYDeviceInformation getUUID]);
+    NSLog(@"getDeviceIPAdress---%@", [EYDeviceInformation getDeviceIPAdress]);
+    NSLog(@"getRouterIpAdress---%@", [EYDeviceInformation getRouterIpAdress]);
+    NSLog(@"getTotalMemorySize---%lld", [EYDeviceInformation getTotalMemorySize]);
+    NSLog(@"getCurrentBatteryLevel---%f", [EYDeviceInformation getCurrentBatteryLevel]);
+    NSLog(@"getCurrentWiFiSSID---%@", [EYDeviceInformation getCurrentWiFiSSID]);
+
+    NSLog(@"******************测试EYDeviceInformation结束**********************");
+
+
 }
 
 
