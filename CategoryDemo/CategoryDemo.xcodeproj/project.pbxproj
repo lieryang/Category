@@ -16,6 +16,13 @@
 		60F94C3F1E6D22BD0074AD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C3D1E6D22BD0074AD8F /* LaunchScreen.storyboard */; };
 		CC4084B01F3A98BA00A56FEC /* EYDeviceInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4084AF1F3A98BA00A56FEC /* EYDeviceInformation.m */; };
 		CC4084B51F3AA71400A56FEC /* getgateway.c in Sources */ = {isa = PBXBuildFile; fileRef = CC4084B21F3AA71400A56FEC /* getgateway.c */; };
+		CC72B4CF1F735BB30056E936 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4A81F7359950056E936 /* NSArray+Log.m */; };
+		CC72B4D01F735BB30056E936 /* NSMutableArray+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4AA1F7359950056E936 /* NSMutableArray+EYAddition.m */; };
+		CC72B4D11F735BB30056E936 /* NSObject+EYRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4AC1F7359950056E936 /* NSObject+EYRuntime.m */; };
+		CC72B4D21F735BB30056E936 /* NSString+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4AE1F7359950056E936 /* NSString+EYAddition.m */; };
+		CC72B4D31F735BB30056E936 /* UIButton+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4B11F7359950056E936 /* UIButton+EYAddition.m */; };
+		CC72B4D41F735BB30056E936 /* UIImage+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4B31F7359950056E936 /* UIImage+EYAddition.m */; };
+		CC72B4D51F735BB90056E936 /* UILabel+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4B51F7359950056E936 /* UILabel+EYAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -234,6 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC72B4D51F735BB90056E936 /* UILabel+EYAddition.m in Sources */,
+				CC72B4CF1F735BB30056E936 /* NSArray+Log.m in Sources */,
+				CC72B4D01F735BB30056E936 /* NSMutableArray+EYAddition.m in Sources */,
+				CC72B4D11F735BB30056E936 /* NSObject+EYRuntime.m in Sources */,
+				CC72B4D21F735BB30056E936 /* NSString+EYAddition.m in Sources */,
+				CC72B4D31F735BB30056E936 /* UIButton+EYAddition.m in Sources */,
+				CC72B4D41F735BB30056E936 /* UIImage+EYAddition.m in Sources */,
 				181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */,
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
 				CC4084B01F3A98BA00A56FEC /* EYDeviceInformation.m in Sources */,
