@@ -7,36 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		181B31401E7585CD006ACFF8 /* NSObject+EYRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B313F1E7585CD006ACFF8 /* NSObject+EYRuntime.m */; };
-		181B31431E76D3DA006ACFF8 /* NSString+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31421E76D3DA006ACFF8 /* NSString+EYAddition.m */; };
-		181B31461E7CF9FD006ACFF8 /* UIButton+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31451E7CF9FD006ACFF8 /* UIButton+EYAddition.m */; };
 		181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31481E7D1213006ACFF8 /* EYHTTPManager.m */; };
-		6054A6951EBC4C50002921EA /* UIImage+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6054A6941EBC4C50002921EA /* UIImage+EYAddition.m */; };
 		60F94C311E6D22BD0074AD8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C301E6D22BD0074AD8F /* main.m */; };
 		60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C331E6D22BD0074AD8F /* AppDelegate.m */; };
 		60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C361E6D22BD0074AD8F /* ViewController.m */; };
 		60F94C3A1E6D22BD0074AD8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C381E6D22BD0074AD8F /* Main.storyboard */; };
 		60F94C3C1E6D22BD0074AD8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C3B1E6D22BD0074AD8F /* Assets.xcassets */; };
 		60F94C3F1E6D22BD0074AD8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60F94C3D1E6D22BD0074AD8F /* LaunchScreen.storyboard */; };
-		60F94C4A1E6D24680074AD8F /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C491E6D24680074AD8F /* NSArray+Log.m */; };
-		60F94C4D1E6D259E0074AD8F /* UILabel+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C4C1E6D259E0074AD8F /* UILabel+EYAddition.m */; };
 		CC4084B01F3A98BA00A56FEC /* EYDeviceInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC4084AF1F3A98BA00A56FEC /* EYDeviceInformation.m */; };
 		CC4084B51F3AA71400A56FEC /* getgateway.c in Sources */ = {isa = PBXBuildFile; fileRef = CC4084B21F3AA71400A56FEC /* getgateway.c */; };
-		CC5BD6241F39572E00B70F03 /* NSMutableArray+EYAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5BD6231F39572E00B70F03 /* NSMutableArray+EYAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		181B313E1E7585CD006ACFF8 /* NSObject+EYRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EYRuntime.h"; sourceTree = "<group>"; };
-		181B313F1E7585CD006ACFF8 /* NSObject+EYRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EYRuntime.m"; sourceTree = "<group>"; };
-		181B31411E76D3DA006ACFF8 /* NSString+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EYAddition.h"; sourceTree = "<group>"; };
-		181B31421E76D3DA006ACFF8 /* NSString+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EYAddition.m"; sourceTree = "<group>"; };
-		181B31441E7CF9FD006ACFF8 /* UIButton+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EYAddition.h"; sourceTree = "<group>"; };
-		181B31451E7CF9FD006ACFF8 /* UIButton+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EYAddition.m"; sourceTree = "<group>"; };
 		181B31471E7D1213006ACFF8 /* EYHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYHTTPManager.h; sourceTree = "<group>"; };
 		181B31481E7D1213006ACFF8 /* EYHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYHTTPManager.m; sourceTree = "<group>"; };
-		181B314A1E7D122B006ACFF8 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		6054A6931EBC4C50002921EA /* UIImage+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+EYAddition.h"; sourceTree = "<group>"; };
-		6054A6941EBC4C50002921EA /* UIImage+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EYAddition.m"; sourceTree = "<group>"; };
 		60F94C2C1E6D22BD0074AD8F /* CategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F94C301E6D22BD0074AD8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60F94C321E6D22BD0074AD8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,18 +31,27 @@
 		60F94C3B1E6D22BD0074AD8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60F94C3E1E6D22BD0074AD8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60F94C401E6D22BD0074AD8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		60F94C471E6D240E0074AD8F /* EYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EYCategory.h; sourceTree = "<group>"; };
-		60F94C481E6D24680074AD8F /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
-		60F94C491E6D24680074AD8F /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
-		60F94C4B1E6D259E0074AD8F /* UILabel+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+EYAddition.h"; sourceTree = "<group>"; };
-		60F94C4C1E6D259E0074AD8F /* UILabel+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+EYAddition.m"; sourceTree = "<group>"; };
 		CC4084AE1F3A98BA00A56FEC /* EYDeviceInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYDeviceInformation.h; sourceTree = "<group>"; };
 		CC4084AF1F3A98BA00A56FEC /* EYDeviceInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYDeviceInformation.m; sourceTree = "<group>"; };
 		CC4084B21F3AA71400A56FEC /* getgateway.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getgateway.c; sourceTree = "<group>"; };
 		CC4084B61F3AA94A00A56FEC /* getgateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getgateway.h; sourceTree = "<group>"; };
 		CC4084B71F3AAA8100A56FEC /* route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
-		CC5BD6221F39572E00B70F03 /* NSMutableArray+EYAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+EYAddition.h"; sourceTree = "<group>"; };
-		CC5BD6231F39572E00B70F03 /* NSMutableArray+EYAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+EYAddition.m"; sourceTree = "<group>"; };
+		CC72B4A61F7359950056E936 /* EYCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EYCategory.h; sourceTree = "<group>"; };
+		CC72B4A71F7359950056E936 /* NSArray+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		CC72B4A81F7359950056E936 /* NSArray+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		CC72B4A91F7359950056E936 /* NSMutableArray+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+EYAddition.h"; sourceTree = "<group>"; };
+		CC72B4AA1F7359950056E936 /* NSMutableArray+EYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+EYAddition.m"; sourceTree = "<group>"; };
+		CC72B4AB1F7359950056E936 /* NSObject+EYRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+EYRuntime.h"; sourceTree = "<group>"; };
+		CC72B4AC1F7359950056E936 /* NSObject+EYRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EYRuntime.m"; sourceTree = "<group>"; };
+		CC72B4AD1F7359950056E936 /* NSString+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EYAddition.h"; sourceTree = "<group>"; };
+		CC72B4AE1F7359950056E936 /* NSString+EYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EYAddition.m"; sourceTree = "<group>"; };
+		CC72B4AF1F7359950056E936 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		CC72B4B01F7359950056E936 /* UIButton+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+EYAddition.h"; sourceTree = "<group>"; };
+		CC72B4B11F7359950056E936 /* UIButton+EYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EYAddition.m"; sourceTree = "<group>"; };
+		CC72B4B21F7359950056E936 /* UIImage+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+EYAddition.h"; sourceTree = "<group>"; };
+		CC72B4B31F7359950056E936 /* UIImage+EYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EYAddition.m"; sourceTree = "<group>"; };
+		CC72B4B41F7359950056E936 /* UILabel+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+EYAddition.h"; sourceTree = "<group>"; };
+		CC72B4B51F7359950056E936 /* UILabel+EYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+EYAddition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +84,8 @@
 		60F94C2E1E6D22BD0074AD8F /* CategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CC72B4A51F7359950056E936 /* Category */,
 				CC4084AC1F3A988E00A56FEC /* Tool */,
-				60F94C461E6D235C0074AD8F /* Category */,
 				60F94C321E6D22BD0074AD8F /* AppDelegate.h */,
 				60F94C331E6D22BD0074AD8F /* AppDelegate.m */,
 				181B31471E7D1213006ACFF8 /* EYHTTPManager.h */,
@@ -114,29 +107,6 @@
 				60F94C301E6D22BD0074AD8F /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		60F94C461E6D235C0074AD8F /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				181B314A1E7D122B006ACFF8 /* Singleton.h */,
-				60F94C471E6D240E0074AD8F /* EYCategory.h */,
-				60F94C481E6D24680074AD8F /* NSArray+Log.h */,
-				60F94C491E6D24680074AD8F /* NSArray+Log.m */,
-				CC5BD6221F39572E00B70F03 /* NSMutableArray+EYAddition.h */,
-				CC5BD6231F39572E00B70F03 /* NSMutableArray+EYAddition.m */,
-				60F94C4B1E6D259E0074AD8F /* UILabel+EYAddition.h */,
-				60F94C4C1E6D259E0074AD8F /* UILabel+EYAddition.m */,
-				181B313E1E7585CD006ACFF8 /* NSObject+EYRuntime.h */,
-				181B313F1E7585CD006ACFF8 /* NSObject+EYRuntime.m */,
-				181B31411E76D3DA006ACFF8 /* NSString+EYAddition.h */,
-				181B31421E76D3DA006ACFF8 /* NSString+EYAddition.m */,
-				181B31441E7CF9FD006ACFF8 /* UIButton+EYAddition.h */,
-				181B31451E7CF9FD006ACFF8 /* UIButton+EYAddition.m */,
-				6054A6931EBC4C50002921EA /* UIImage+EYAddition.h */,
-				6054A6941EBC4C50002921EA /* UIImage+EYAddition.m */,
-			);
-			path = Category;
 			sourceTree = "<group>";
 		};
 		CC4084AC1F3A988E00A56FEC /* Tool */ = {
@@ -165,6 +135,30 @@
 				CC4084B21F3AA71400A56FEC /* getgateway.c */,
 			);
 			path = Route;
+			sourceTree = "<group>";
+		};
+		CC72B4A51F7359950056E936 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				CC72B4A61F7359950056E936 /* EYCategory.h */,
+				CC72B4A71F7359950056E936 /* NSArray+Log.h */,
+				CC72B4A81F7359950056E936 /* NSArray+Log.m */,
+				CC72B4A91F7359950056E936 /* NSMutableArray+EYAddition.h */,
+				CC72B4AA1F7359950056E936 /* NSMutableArray+EYAddition.m */,
+				CC72B4AB1F7359950056E936 /* NSObject+EYRuntime.h */,
+				CC72B4AC1F7359950056E936 /* NSObject+EYRuntime.m */,
+				CC72B4AD1F7359950056E936 /* NSString+EYAddition.h */,
+				CC72B4AE1F7359950056E936 /* NSString+EYAddition.m */,
+				CC72B4AF1F7359950056E936 /* Singleton.h */,
+				CC72B4B01F7359950056E936 /* UIButton+EYAddition.h */,
+				CC72B4B11F7359950056E936 /* UIButton+EYAddition.m */,
+				CC72B4B21F7359950056E936 /* UIImage+EYAddition.h */,
+				CC72B4B31F7359950056E936 /* UIImage+EYAddition.m */,
+				CC72B4B41F7359950056E936 /* UILabel+EYAddition.h */,
+				CC72B4B51F7359950056E936 /* UILabel+EYAddition.m */,
+			);
+			name = Category;
+			path = ../../Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,18 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181B31431E76D3DA006ACFF8 /* NSString+EYAddition.m in Sources */,
 				181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */,
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
-				60F94C4A1E6D24680074AD8F /* NSArray+Log.m in Sources */,
 				CC4084B01F3A98BA00A56FEC /* EYDeviceInformation.m in Sources */,
-				181B31401E7585CD006ACFF8 /* NSObject+EYRuntime.m in Sources */,
-				6054A6951EBC4C50002921EA /* UIImage+EYAddition.m in Sources */,
 				60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */,
-				60F94C4D1E6D259E0074AD8F /* UILabel+EYAddition.m in Sources */,
-				CC5BD6241F39572E00B70F03 /* NSMutableArray+EYAddition.m in Sources */,
 				60F94C311E6D22BD0074AD8F /* main.m in Sources */,
-				181B31461E7CF9FD006ACFF8 /* UIButton+EYAddition.m in Sources */,
 				CC4084B51F3AA71400A56FEC /* getgateway.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
