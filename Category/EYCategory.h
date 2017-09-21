@@ -116,8 +116,11 @@
     } else { \
         dispatch_sync(dispatch_get_main_queue(), block); \
     }
-
+//用上面👆那个宏
 #define dispatch_async_main(block)      dispatch_async(dispatch_get_main_queue(), block)
 
 //17.获取设备当前语言
 #define EYDeviceLanguage [NSLocale preferredLanguages].firstObject
+
+//18.获取SafeAreaInsets的范围 默认{88, 0 , 44, 0}
+#define EYViewSafeAreaInsets(view) ({UIEdgeInsets i; if(@available(iOS 11.0, *)) {i = view.safeAreaInsets;} else {i = UIEdgeInsetsZero;} i;})
