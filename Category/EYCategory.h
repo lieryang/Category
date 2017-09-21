@@ -108,3 +108,16 @@
 
 //15.字典是否为空
 #define EYDictionaryIsEmpty(dictionary) ([dictionary isKindOfClass:[NSNull class]] || dictionary.allKeys == 0 ? YES : NO)
+
+//16.子线程中，使用宏将更新UI的任务派发到主队列
+#define dispatch_main_sync_safe(block) \
+    if ([NSThread isMainThread]) { \
+        block(); \
+    } else { \
+        dispatch_sync(dispatch_get_main_queue(), block); \
+    }
+
+#define dispatch_async_main(block)      dispatch_async(dispatch_get_main_queue(), block)
+
+//17.获取设备当前语言
+#define EYDeviceLanguage [NSLocale preferredLanguages].firstObject
