@@ -7,6 +7,7 @@
 #import "NSString+EYQRCode.h"
 #import "UIButton+EYAddition.h"
 #import "UIImage+EYAddition.h"
+#import "UIImage+EYQRCode.h"
 
 // 1、获取通知中心
 #define EYNotificationCenter [NSNotificationCenter defaultCenter]

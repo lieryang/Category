@@ -24,6 +24,7 @@
 		CC72B4DF1F735C270056E936 /* EYDeviceInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4DA1F735C1C0056E936 /* EYDeviceInformation.m */; };
 		CC72B4E01F735C270056E936 /* getgateway.c in Sources */ = {isa = PBXBuildFile; fileRef = CC72B4DC1F735C1C0056E936 /* getgateway.c */; };
 		CC9CF5E71FFF0C9C00F75407 /* NSString+EYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9CF5E61FFF0C9C00F75407 /* NSString+EYQRCode.m */; };
+		CC9CF5EA1FFF247400F75407 /* UIImage+EYQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9CF5E91FFF247400F75407 /* UIImage+EYQRCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,8 @@
 		CC72B4DE1F735C1C0056E936 /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
 		CC9CF5E51FFF0C9C00F75407 /* NSString+EYQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EYQRCode.h"; sourceTree = "<group>"; };
 		CC9CF5E61FFF0C9C00F75407 /* NSString+EYQRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EYQRCode.m"; sourceTree = "<group>"; };
+		CC9CF5E81FFF247400F75407 /* UIImage+EYQRCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+EYQRCode.h"; sourceTree = "<group>"; };
+		CC9CF5E91FFF247400F75407 /* UIImage+EYQRCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+EYQRCode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,8 @@
 				CC72B4B11F7359950056E936 /* UIButton+EYAddition.m */,
 				CC72B4B21F7359950056E936 /* UIImage+EYAddition.h */,
 				CC72B4B31F7359950056E936 /* UIImage+EYAddition.m */,
+				CC9CF5E81FFF247400F75407 /* UIImage+EYQRCode.h */,
+				CC9CF5E91FFF247400F75407 /* UIImage+EYQRCode.m */,
 				CC72B4B41F7359950056E936 /* UILabel+EYAddition.h */,
 				CC72B4B51F7359950056E936 /* UILabel+EYAddition.m */,
 			);
@@ -257,6 +262,7 @@
 				CC72B4D21F735BB30056E936 /* NSString+EYAddition.m in Sources */,
 				CC72B4D31F735BB30056E936 /* UIButton+EYAddition.m in Sources */,
 				CC72B4D41F735BB30056E936 /* UIImage+EYAddition.m in Sources */,
+				CC9CF5EA1FFF247400F75407 /* UIImage+EYQRCode.m in Sources */,
 				181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */,
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
 				60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */,
