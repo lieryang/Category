@@ -19,4 +19,14 @@
  */
 - (UIImage *)ey_createQRCodeImageWithSize:(CGFloat)size;
 
+/**
+ 根据字符串创建带logo的二维码图片
+
+ @param size 二维码图片总大小
+ @param logoImage logo图片
+ @param logoSize 二维码中的logo图片大小
+ @return 生成的带logo的二维码图片
+ */
+- (UIImage *)ey_createQRCodeImageWithSize:(CGFloat)size withLogoImage:(UIImage *)logoImage withLogoSize:(CGFloat)logoSize;
+
 @end

@@ -10,6 +10,7 @@
 
 @implementation NSString (EYQRCode)
 
+#pragma mark - 外界调用接口
 /**
  根据字符串创建二维码图片
 
@@ -25,6 +26,25 @@
     return [self createNonInterpolatedUIImageFormCIImage:ciImage withSize:size];
 }
 
+/**
+ 根据字符串创建带logo的二维码图片
+
+ @param size 二维码图片总大小
+ @param logoImage logo图片
+ @param logoSize 二维码中的logo图片大小
+ @return 生成的带logo的二维码图片
+ */
+- (UIImage *)ey_createQRCodeImageWithSize:(CGFloat)size withLogoImage:(UIImage *)logoImage withLogoSize:(CGFloat)logoSize
+{
+    UIImage *superImage = [self ey_createQRCodeImageWithSize:size];
+    if (logoSize < 0) {
+        return superImage;
+    } else {
+        return [self mergeImage:superImage withSubImage:logoImage withSubImageSize:logoSize];
+    }
+}
+
+#pragma mark - 内部使用的方法
 /**
  根据字符串生成二维码 CIImage 对象
 
@@ -78,6 +98,32 @@
     CGContextRelease(bitmapRef);
     CGImageRelease(bitmapImage);
     return [UIImage imageWithCGImage:scaledImage];
+}
+
+/**
+ 合并两张图片
+
+ @param superImage 底层图片
+ @param subImage 上层图片
+ @return 合并后的图片
+ */
+- (UIImage *)mergeImage:(UIImage *)superImage withSubImage:(UIImage *)subImage withSubImageSize:(CGFloat)subSize
+{
+    UIGraphicsBeginImageContext(superImage.size);
+    CGFloat superW = superImage.size.width;
+    CGFloat superH = superImage.size.height;
+    CGFloat subW = subSize;
+    CGFloat subH = subSize;
+
+    [superImage drawInRect:CGRectMake(0, 0, superW, superH)];
+
+    [subImage drawInRect:CGRectMake((superW - subW) / 2,(superH - subH) / 2, subW, subH)];
+
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+
+    UIGraphicsEndImageContext();
+
+    return image;
 }
 
 @end

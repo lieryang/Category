@@ -39,6 +39,9 @@
 
     //测试普通二维码生成
     self.QRCodeImageView.image = [@"www.baidu.com" ey_createQRCodeImageWithSize:200];
+
+    //测试logo二维码生成
+    self.QRCodeImageView.image = [@"www.baidu.com" ey_createQRCodeImageWithSize:375 withLogoImage:[UIImage imageNamed:@"logo"] withLogoSize:50];
 }
 
 
