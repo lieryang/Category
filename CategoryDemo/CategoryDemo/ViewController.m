@@ -13,6 +13,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *QRCodeImageView;
+
 @end
 
 @implementation ViewController
@@ -35,7 +37,8 @@
 
     NSLog(@"******************测试EYDeviceInformation结束**********************");
 
-
+    //测试普通二维码生成
+    self.QRCodeImageView.image = [@"www.baidu.com" ey_createQRCodeImageWithSize:200];
 }
 
 
