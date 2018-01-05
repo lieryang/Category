@@ -4,6 +4,7 @@
 #import "UILabel+EYAddition.h"
 #import "NSObject+EYRuntime.h"
 #import "NSString+EYAddition.h"
+#import "NSString+EYQRCode.h"
 #import "UIButton+EYAddition.h"
 #import "UIImage+EYAddition.h"
 
