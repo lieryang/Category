@@ -30,6 +30,7 @@
 /* Begin PBXFileReference section */
 		181B31471E7D1213006ACFF8 /* EYHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYHTTPManager.h; sourceTree = "<group>"; };
 		181B31481E7D1213006ACFF8 /* EYHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYHTTPManager.m; sourceTree = "<group>"; };
+		60904E12212D3928003FE80F /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		60F94C2C1E6D22BD0074AD8F /* CategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F94C301E6D22BD0074AD8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60F94C321E6D22BD0074AD8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		CC72B4AC1F7359950056E936 /* NSObject+EYRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EYRuntime.m"; sourceTree = "<group>"; };
 		CC72B4AD1F7359950056E936 /* NSString+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EYAddition.h"; sourceTree = "<group>"; };
 		CC72B4AE1F7359950056E936 /* NSString+EYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EYAddition.m"; sourceTree = "<group>"; };
-		CC72B4AF1F7359950056E936 /* Singleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		CC72B4B01F7359950056E936 /* UIButton+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+EYAddition.h"; sourceTree = "<group>"; };
 		CC72B4B11F7359950056E936 /* UIButton+EYAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EYAddition.m"; sourceTree = "<group>"; };
 		CC72B4B21F7359950056E936 /* UIImage+EYAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+EYAddition.h"; sourceTree = "<group>"; };
@@ -126,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				CC72B4A61F7359950056E936 /* EYCategory.h */,
+				60904E12212D3928003FE80F /* Singleton.h */,
 				CC72B4A71F7359950056E936 /* NSArray+Log.h */,
 				CC72B4A81F7359950056E936 /* NSArray+Log.m */,
 				CC72B4A91F7359950056E936 /* NSMutableArray+EYAddition.h */,
@@ -136,7 +137,6 @@
 				CC72B4AE1F7359950056E936 /* NSString+EYAddition.m */,
 				CC9CF5E51FFF0C9C00F75407 /* NSString+EYQRCode.h */,
 				CC9CF5E61FFF0C9C00F75407 /* NSString+EYQRCode.m */,
-				CC72B4AF1F7359950056E936 /* Singleton.h */,
 				CC72B4B01F7359950056E936 /* UIButton+EYAddition.h */,
 				CC72B4B11F7359950056E936 /* UIButton+EYAddition.m */,
 				CC72B4B21F7359950056E936 /* UIImage+EYAddition.h */,

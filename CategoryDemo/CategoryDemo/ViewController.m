@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    EYHTTPManager * manager1 = [EYHTTPManager sharedsharedHTTPManager];
+    EYHTTPManager * manager1 = [EYHTTPManager sharedHTTPManager];
     EYHTTPManager * manager2 = [[EYHTTPManager alloc] init];
     NSLog(@"manager1---%p",manager1);
     NSLog(@"manager2---%p",manager2);

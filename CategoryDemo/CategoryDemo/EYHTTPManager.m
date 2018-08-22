@@ -9,5 +9,5 @@
 #import "EYHTTPManager.h"
 
 @implementation EYHTTPManager
-SingletonM(sharedHTTPManager)
+SingletonM(HTTPManager)
 @end
