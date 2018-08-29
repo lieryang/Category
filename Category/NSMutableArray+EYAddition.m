@@ -10,8 +10,7 @@
 
 @implementation NSMutableArray (EYAddition)
 
-- (id)safeObjectAtIndex:(NSUInteger)index
-{
+- (id)safeObjectAtIndex:(NSUInteger)index {
     if (index < self.count){
         return [self objectAtIndex:index];
     }else{

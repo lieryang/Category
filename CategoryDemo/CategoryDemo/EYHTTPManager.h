@@ -10,5 +10,7 @@
 #import "Singleton.h"
 
 @interface EYHTTPManager : NSObject
+
 SingletonH(sharedHTTPManager)
+
 @end

@@ -17,8 +17,7 @@
  @param size 二维码的大小
  @return 生成的二维码图片
  */
-- (UIImage *)ey_createQRCodeImageWithSize:(CGFloat)size
-{
+- (UIImage *)ey_createQRCodeImageWithSize:(CGFloat)size {
     //生成二维码图片
     CIImage * ciImage = [self creatQRcodeWithUrlString:self];
 
@@ -34,8 +33,7 @@
  @param logoSize 二维码中的logo图片大小
  @return 生成的带logo的二维码图片
  */
-- (UIImage *)ey_createQRCodeImageWithSize:(CGFloat)size withLogoImage:(UIImage *)logoImage withLogoSize:(CGFloat)logoSize
-{
+- (UIImage *)ey_createQRCodeImageWithSize:(CGFloat)size withLogoImage:(UIImage *)logoImage withLogoSize:(CGFloat)logoSize {
     UIImage *superImage = [self ey_createQRCodeImageWithSize:size];
     if (logoSize < 0) {
         return superImage;
@@ -51,8 +49,7 @@
  @param urlString 需要生成二维码的字符串
  @return 生成的二维码
  */
-- (CIImage *)creatQRcodeWithUrlString:(NSString *)urlString
-{
+- (CIImage *)creatQRcodeWithUrlString:(NSString *)urlString {
     // 1.创建过滤器 CIQRCodeGenerator这个字符串是固定的不能修改为其他的字符串
     CIFilter *filter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
     // 2.恢复滤镜的默认属性 (因为滤镜有可能保存上一次的属性)
@@ -71,8 +68,7 @@
  * @param image CIImage
  * @param size 图片宽度
  */
-- (UIImage *)createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat)size
-{
+- (UIImage *)createNonInterpolatedUIImageFormCIImage:(CIImage *)image withSize:(CGFloat)size {
     CGRect extent = CGRectIntegral(image.extent);
     CGFloat extentWidth = CGRectGetWidth(extent);
     CGFloat extentHeight = CGRectGetHeight(extent);
@@ -97,6 +93,7 @@
     CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
     CGContextRelease(bitmapRef);
     CGImageRelease(bitmapImage);
+
     return [UIImage imageWithCGImage:scaledImage];
 }
 
@@ -107,8 +104,7 @@
  @param subImage 上层图片
  @return 合并后的图片
  */
-- (UIImage *)mergeImage:(UIImage *)superImage withSubImage:(UIImage *)subImage withSubImageSize:(CGFloat)subSize
-{
+- (UIImage *)mergeImage:(UIImage *)superImage withSubImage:(UIImage *)subImage withSubImageSize:(CGFloat)subSize {
     UIGraphicsBeginImageContext(superImage.size);
     CGFloat superW = superImage.size.width;
     CGFloat superH = superImage.size.height;

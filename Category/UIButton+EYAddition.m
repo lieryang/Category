@@ -10,13 +10,11 @@
 
 @implementation UIButton (EYAddition)
 
-+ (instancetype)ey_textButton:(NSString *)title fontSize:(CGFloat)fontSize normalColor:(UIColor *)normalColor highlightedColor:(UIColor *)highlightedColor
-{
++ (instancetype)ey_textButton:(NSString *)title fontSize:(CGFloat)fontSize normalColor:(UIColor *)normalColor highlightedColor:(UIColor *)highlightedColor {
     return [self ey_textButton:title fontSize:fontSize normalColor:normalColor highlightedColor:highlightedColor backgroundImageName:nil];
 }
 
-+ (instancetype)ey_textButton:(NSString *)title fontSize:(CGFloat)fontSize normalColor:(UIColor *)normalColor highlightedColor:(UIColor *)highlightedColor backgroundImageName:(NSString *)backgroundImageName
-{
++ (instancetype)ey_textButton:(NSString *)title fontSize:(CGFloat)fontSize normalColor:(UIColor *)normalColor highlightedColor:(UIColor *)highlightedColor backgroundImageName:(NSString *)backgroundImageName {
     UIButton *button = [[self alloc] init];
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:normalColor forState:UIControlStateNormal];
@@ -33,8 +31,7 @@
     return button;
 }
 
-+ (instancetype)ey_imageButton:(NSString *)imageName backgroundImageName:(NSString *)backgroundImageName
-{
++ (instancetype)ey_imageButton:(NSString *)imageName backgroundImageName:(NSString *)backgroundImageName {
     UIButton *button = [[self alloc] init];
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     NSString *imageNameHL = [imageName stringByAppendingString:@"_highlighted"];

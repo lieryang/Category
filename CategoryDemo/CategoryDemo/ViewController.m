@@ -21,34 +21,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
     EYHTTPManager * manager1 = [EYHTTPManager sharedsharedHTTPManager];
     EYHTTPManager * manager2 = [[EYHTTPManager alloc] init];
-    NSLog(@"manager1---%p",manager1);
-    NSLog(@"manager2---%p",manager2);
-    NSLog(@"*******************测试单例结束*********************");
+    EYLog(@"manager1---%p",manager1);
+    EYLog(@"manager2---%p",manager2);
+    EYLog(@"*******************测试单例结束*********************");
 
-    NSLog(@"UUID---%@", [EYDeviceInformation getUUID]);
-    NSLog(@"getDeviceIPAdress---%@", [EYDeviceInformation getDeviceIPAdress]);
-    NSLog(@"getRouterIpAdress---%@", [EYDeviceInformation getRouterIpAdress]);
-    NSLog(@"getTotalMemorySize---%lld", [EYDeviceInformation getTotalMemorySize]);
-    NSLog(@"getCurrentBatteryLevel---%f", [EYDeviceInformation getCurrentBatteryLevel]);
-    NSLog(@"getCurrentWiFiSSID---%@", [EYDeviceInformation getCurrentWiFiSSID]);
+    EYLog(@"UUID---%@", [EYDeviceInformation getUUID]);
+    EYLog(@"getDeviceIPAdress---%@", [EYDeviceInformation getDeviceIPAdress]);
+    EYLog(@"getRouterIpAdress---%@", [EYDeviceInformation getRouterIpAdress]);
+    EYLog(@"getTotalMemorySize---%lld", [EYDeviceInformation getTotalMemorySize]);
+    EYLog(@"getCurrentBatteryLevel---%f", [EYDeviceInformation getCurrentBatteryLevel]);
+    EYLog(@"getCurrentWiFiSSID---%@", [EYDeviceInformation getCurrentWiFiSSID]);
 
-    NSLog(@"******************测试EYDeviceInformation结束**********************");
+    EYLog(@"******************测试EYDeviceInformation结束**********************");
 
     //测试普通二维码生成
     self.QRCodeImageView.image = [@"www.baidu.com" ey_createQRCodeImageWithSize:200];
 
     //测试logo二维码生成
     self.QRCodeImageView.image = [@"www.baidu.com" ey_createQRCodeImageWithSize:375 withLogoImage:[UIImage imageNamed:@"logo"] withLogoSize:50];
+    EYLog(@"******************测试二维码结束**********************");
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

@@ -15,8 +15,7 @@
 
  @return 图片中的二维码信息(该图片中的一个二维码信息)
  */
-- (nullable NSString *)readQRCode
-{
+- (nullable NSString *)readQRCode {
     return [[self readQRCodes].firstObject messageString];
 }
 
@@ -25,8 +24,7 @@
 
  @return 图片中的二维码数据集合 CIQRCodeFeature对象
  */
-- (nullable NSArray *)readQRCodes
-{
+- (nullable NSArray *)readQRCodes {
     // 创建一个CIImage对象
     CIImage *ciImage = [[CIImage alloc] initWithCGImage:self.CGImage options:nil];
     CIContext *context = [CIContext contextWithOptions:@{kCIContextUseSoftwareRenderer : @(YES)}]; // 软件渲染
