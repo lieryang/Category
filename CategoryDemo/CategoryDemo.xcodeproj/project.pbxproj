@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31481E7D1213006ACFF8 /* EYHTTPManager.m */; };
-		60D81BCD2136480D00456939 /* NSObject+Copy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D81BCC2136480D00456939 /* NSObject+Copy.m */; };
+		60B2FADF2138E05C0046D13D /* NSObject+EYCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B2FADD2138E05C0046D13D /* NSObject+EYCoding.m */; };
+		60B2FAE02138E05C0046D13D /* NSObject+EYCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B2FADE2138E05C0046D13D /* NSObject+EYCopy.m */; };
 		60F94C311E6D22BD0074AD8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C301E6D22BD0074AD8F /* main.m */; };
 		60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C331E6D22BD0074AD8F /* AppDelegate.m */; };
 		60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C361E6D22BD0074AD8F /* ViewController.m */; };
@@ -31,8 +32,10 @@
 /* Begin PBXFileReference section */
 		181B31471E7D1213006ACFF8 /* EYHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYHTTPManager.h; sourceTree = "<group>"; };
 		181B31481E7D1213006ACFF8 /* EYHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYHTTPManager.m; sourceTree = "<group>"; };
-		60D81BCB2136480D00456939 /* NSObject+Copy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Copy.h"; sourceTree = "<group>"; };
-		60D81BCC2136480D00456939 /* NSObject+Copy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Copy.m"; sourceTree = "<group>"; };
+		60B2FADB2138E05C0046D13D /* NSObject+EYCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EYCopy.h"; sourceTree = "<group>"; };
+		60B2FADC2138E05C0046D13D /* NSObject+EYCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EYCoding.h"; sourceTree = "<group>"; };
+		60B2FADD2138E05C0046D13D /* NSObject+EYCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EYCoding.m"; sourceTree = "<group>"; };
+		60B2FADE2138E05C0046D13D /* NSObject+EYCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EYCopy.m"; sourceTree = "<group>"; };
 		60F94C2C1E6D22BD0074AD8F /* CategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F94C301E6D22BD0074AD8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60F94C321E6D22BD0074AD8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,8 +138,10 @@
 				CC72B4AA1F7359950056E936 /* NSMutableArray+EYAddition.m */,
 				CC72B4AB1F7359950056E936 /* NSObject+EYRuntime.h */,
 				CC72B4AC1F7359950056E936 /* NSObject+EYRuntime.m */,
-				60D81BCB2136480D00456939 /* NSObject+Copy.h */,
-				60D81BCC2136480D00456939 /* NSObject+Copy.m */,
+				60B2FADB2138E05C0046D13D /* NSObject+EYCopy.h */,
+				60B2FADE2138E05C0046D13D /* NSObject+EYCopy.m */,
+				60B2FADC2138E05C0046D13D /* NSObject+EYCoding.h */,
+				60B2FADD2138E05C0046D13D /* NSObject+EYCoding.m */,
 				CC72B4AD1F7359950056E936 /* NSString+EYAddition.h */,
 				CC72B4AE1F7359950056E936 /* NSString+EYAddition.m */,
 				CC9CF5E51FFF0C9C00F75407 /* NSString+EYQRCode.h */,
@@ -260,17 +265,18 @@
 				CC72B4DF1F735C270056E936 /* EYDeviceInformation.m in Sources */,
 				CC9CF5E71FFF0C9C00F75407 /* NSString+EYQRCode.m in Sources */,
 				CC72B4E01F735C270056E936 /* getgateway.c in Sources */,
+				60B2FADF2138E05C0046D13D /* NSObject+EYCoding.m in Sources */,
 				CC72B4D51F735BB90056E936 /* UILabel+EYAddition.m in Sources */,
 				CC72B4CF1F735BB30056E936 /* NSArray+Log.m in Sources */,
 				CC72B4D01F735BB30056E936 /* NSMutableArray+EYAddition.m in Sources */,
 				CC72B4D11F735BB30056E936 /* NSObject+EYRuntime.m in Sources */,
 				CC72B4D21F735BB30056E936 /* NSString+EYAddition.m in Sources */,
-				60D81BCD2136480D00456939 /* NSObject+Copy.m in Sources */,
 				CC72B4D31F735BB30056E936 /* UIButton+EYAddition.m in Sources */,
 				CC72B4D41F735BB30056E936 /* UIImage+EYAddition.m in Sources */,
 				CC9CF5EA1FFF247400F75407 /* UIImage+EYQRCode.m in Sources */,
 				181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */,
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
+				60B2FAE02138E05C0046D13D /* NSObject+EYCopy.m in Sources */,
 				60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */,
 				60F94C311E6D22BD0074AD8F /* main.m in Sources */,
 			);

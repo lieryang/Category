@@ -1,15 +1,15 @@
 //
-//  NSObject+Copy.m
+//  NSObject+EYCopy.m
 //  CategoryDemo
 //
-//  Created by 李二洋 on 2018/8/29.
+//  Created by 李二洋 on 2018/8/31.
 //  Copyright © 2018年 lieryang. All rights reserved.
 //
 
-#import "NSObject+Copy.h"
+#import "NSObject+EYCopy.h"
 #import <objc/runtime.h>
 
-@implementation NSObject (Copy)
+@implementation NSObject (EYCopy)
 
 - (id)copyWithZone:(NSZone *)zone {
     id mode = [[[self class] allocWithZone:zone] init];
@@ -28,12 +28,15 @@
 
         id value = [self valueForKey:key];
         [mode setValue:value forKey:key];
-
     }
 
     free(ivars);
 
     return mode;
+}
+
+- (id)mutableCopyWithZone:(NSZone *)zone {
+    return [self copyWithZone:zone];
 }
 
 @end
