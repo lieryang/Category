@@ -16,8 +16,7 @@
 }
 
 //如何归档 如何存值
-- (void)encodeWithCoder:(NSCoder *)aCoder
-{
+- (void)encodeWithCoder:(NSCoder *)aCoder {
     unsigned int outCount = 0;
     Ivar * ivars = class_copyIvarList([self class], &outCount);
 
@@ -30,12 +29,8 @@
     free(ivars);
 }
 
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wobjc-designated-initializers"
 //如何解档 如何取值
 - (nullable instancetype)initWithCoder:(nonnull NSCoder *)aDecoder {
-#pragma clang diagnostic pop
     if (self) {
         unsigned int outCount = 0;
         Ivar * ivars = class_copyIvarList([self class], &outCount);
