@@ -18,8 +18,7 @@
 @implementation EYDeviceInformation
 
 /// 获取设备版本号
-+ (nullable NSString *)getDeviceName
-{
++ (nullable NSString *)getDeviceName {
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
