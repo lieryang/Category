@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    EYHTTPManager * manager1 = [EYHTTPManager sharedsharedHTTPManager];
+    EYHTTPManager * manager1 = [EYHTTPManager sharedHTTPManager];
     EYHTTPManager * manager2 = [[EYHTTPManager alloc] init];
     EYLog(@"manager1---%p",manager1);
     EYLog(@"manager2---%p",manager2);

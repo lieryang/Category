@@ -11,6 +11,6 @@
 
 @interface EYHTTPManager : NSObject
 
-SingletonH(sharedHTTPManager)
+SingletonH(HTTPManager)
 
 @end
