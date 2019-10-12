@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 181B31481E7D1213006ACFF8 /* EYHTTPManager.m */; };
+		60B2FADF2138E05C0046D13D /* NSObject+EYCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B2FADD2138E05C0046D13D /* NSObject+EYCoding.m */; };
+		60B2FAE02138E05C0046D13D /* NSObject+EYCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60B2FADE2138E05C0046D13D /* NSObject+EYCopy.m */; };
 		60F94C311E6D22BD0074AD8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C301E6D22BD0074AD8F /* main.m */; };
 		60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C331E6D22BD0074AD8F /* AppDelegate.m */; };
 		60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F94C361E6D22BD0074AD8F /* ViewController.m */; };
@@ -31,6 +33,10 @@
 		181B31471E7D1213006ACFF8 /* EYHTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYHTTPManager.h; sourceTree = "<group>"; };
 		181B31481E7D1213006ACFF8 /* EYHTTPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYHTTPManager.m; sourceTree = "<group>"; };
 		60904E12212D3928003FE80F /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		60B2FADB2138E05C0046D13D /* NSObject+EYCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EYCopy.h"; sourceTree = "<group>"; };
+		60B2FADC2138E05C0046D13D /* NSObject+EYCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EYCoding.h"; sourceTree = "<group>"; };
+		60B2FADD2138E05C0046D13D /* NSObject+EYCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EYCoding.m"; sourceTree = "<group>"; };
+		60B2FADE2138E05C0046D13D /* NSObject+EYCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EYCopy.m"; sourceTree = "<group>"; };
 		60F94C2C1E6D22BD0074AD8F /* CategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60F94C301E6D22BD0074AD8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		60F94C321E6D22BD0074AD8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +139,10 @@
 				CC72B4AA1F7359950056E936 /* NSMutableArray+EYAddition.m */,
 				CC72B4AB1F7359950056E936 /* NSObject+EYRuntime.h */,
 				CC72B4AC1F7359950056E936 /* NSObject+EYRuntime.m */,
+				60B2FADB2138E05C0046D13D /* NSObject+EYCopy.h */,
+				60B2FADE2138E05C0046D13D /* NSObject+EYCopy.m */,
+				60B2FADC2138E05C0046D13D /* NSObject+EYCoding.h */,
+				60B2FADD2138E05C0046D13D /* NSObject+EYCoding.m */,
 				CC72B4AD1F7359950056E936 /* NSString+EYAddition.h */,
 				CC72B4AE1F7359950056E936 /* NSString+EYAddition.m */,
 				CC9CF5E51FFF0C9C00F75407 /* NSString+EYQRCode.h */,
@@ -206,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = EY;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = lieryang;
 				TargetAttributes = {
 					60F94C2B1E6D22BD0074AD8F = {
@@ -255,6 +265,7 @@
 				CC72B4DF1F735C270056E936 /* EYDeviceInformation.m in Sources */,
 				CC9CF5E71FFF0C9C00F75407 /* NSString+EYQRCode.m in Sources */,
 				CC72B4E01F735C270056E936 /* getgateway.c in Sources */,
+				60B2FADF2138E05C0046D13D /* NSObject+EYCoding.m in Sources */,
 				CC72B4D51F735BB90056E936 /* UILabel+EYAddition.m in Sources */,
 				CC72B4CF1F735BB30056E936 /* NSArray+Log.m in Sources */,
 				CC72B4D01F735BB30056E936 /* NSMutableArray+EYAddition.m in Sources */,
@@ -265,6 +276,7 @@
 				CC9CF5EA1FFF247400F75407 /* UIImage+EYQRCode.m in Sources */,
 				181B31491E7D1213006ACFF8 /* EYHTTPManager.m in Sources */,
 				60F94C371E6D22BD0074AD8F /* ViewController.m in Sources */,
+				60B2FAE02138E05C0046D13D /* NSObject+EYCopy.m in Sources */,
 				60F94C341E6D22BD0074AD8F /* AppDelegate.m in Sources */,
 				60F94C311E6D22BD0074AD8F /* main.m in Sources */,
 			);
@@ -301,15 +313,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -349,15 +369,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

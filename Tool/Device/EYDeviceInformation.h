@@ -2,7 +2,7 @@
 //  EYDeviceInformation.h
 //  CategoryDemo
 //
-//  Created by gujiabin on 2017/8/9.
+//  Created by lieryang on 2017/8/9.
 //  Copyright © 2017年 lieryang. All rights reserved.
 //
 

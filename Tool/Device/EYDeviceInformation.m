@@ -18,8 +18,7 @@
 @implementation EYDeviceInformation
 
 /// 获取设备版本号
-+ (nullable NSString *)getDeviceName
-{
++ (nullable NSString *)getDeviceName {
     struct utsname systemInfo;
     uname(&systemInfo);
     NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
@@ -34,13 +33,13 @@
     if ([deviceString isEqualToString:@"iPhone5,4"])    return @"iPhone 5c (GSM+CDMA)";
     if ([deviceString isEqualToString:@"iPhone6,1"])    return @"iPhone 5s (GSM)";
     if ([deviceString isEqualToString:@"iPhone6,2"])    return @"iPhone 5s (GSM+CDMA)";
+    if ([deviceString isEqualToString:@"iPhone8,4"])    return @"iPhone SE";
     if ([deviceString isEqualToString:@"iPhone7,1"])    return @"iPhone 6 Plus";
     if ([deviceString isEqualToString:@"iPhone7,2"])    return @"iPhone 6";
     if ([deviceString isEqualToString:@"iPhone8,1"])    return @"iPhone 6s";
     if ([deviceString isEqualToString:@"iPhone8,2"])    return @"iPhone 6s Plus";
     if ([deviceString isEqualToString:@"iPhone9,1"])    return @"iPhone 7";
     if ([deviceString isEqualToString:@"iPhone9,2"])    return @"iPhone 7 Plus";
-    if ([deviceString isEqualToString:@"iPhone8,4"])    return @"iPhone SE";
 
     if ([deviceString isEqualToString:@"iPod1,1"])      return @"iPod Touch 1G";
     if ([deviceString isEqualToString:@"iPod2,1"])      return @"iPod Touch 2G";
@@ -87,44 +86,37 @@
 }
 
 /// 获取iPhone名称
-+ (nonnull NSString *)getiPhoneName
-{
++ (nonnull NSString *)getiPhoneName {
     return [UIDevice currentDevice].name;
 }
 
 /// 获取app版本号
-+ (nullable NSString *)getAPPVerion
-{
++ (nullable NSString *)getAPPVerion {
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
 /// 获取电池电量
-+ (CGFloat)getBatteryLevel
-{
++ (CGFloat)getBatteryLevel {
     return [UIDevice currentDevice].batteryLevel;
 }
 
 /// 当前系统名称
-+ (nonnull NSString *)getSystemName
-{
++ (nonnull NSString *)getSystemName {
     return [UIDevice currentDevice].systemName;
 }
 
 /// 当前系统版本号
-+ (nonnull NSString *)getSystemVersion
-{
++ (nonnull NSString *)getSystemVersion {
     return [UIDevice currentDevice].systemVersion;
 }
 
 /// 通用唯一识别码UUID
-+ (nonnull NSString *)getUUID
-{
++ (nonnull NSString *)getUUID {
     return [[UIDevice currentDevice] identifierForVendor].UUIDString;
 }
 
 // 获取当前设备IP
-+ (nonnull NSString *)getDeviceIPAdress
-{
++ (nonnull NSString *)getDeviceIPAdress {
     NSString *address = @"an error occurred when obtaining ip address";
     struct ifaddrs *interfaces = NULL;
     struct ifaddrs *temp_addr = NULL;
@@ -148,8 +140,7 @@
 }
 
 //获取当前wifi的路由器地址
-+ (nonnull NSString *)getRouterIpAdress
-{
++ (nonnull NSString *)getRouterIpAdress {
     in_addr_t i =inet_addr([[self getDeviceIPAdress] cStringUsingEncoding:NSUTF8StringEncoding]);
     in_addr_t *x =&i;
 
@@ -161,8 +152,7 @@
 }
 
 /// 获取当前wifi的SSID
-+ (nullable NSString *)getCurrentWiFiSSID
-{
++ (nullable NSString *)getCurrentWiFiSSID {
     NSArray *ifs = (__bridge_transfer NSArray *)CNCopySupportedInterfaces();
 
     NSDictionary *info = nil;
@@ -180,19 +170,16 @@
 }
 
 /// 获取总内存大小
-+ (long long)getTotalMemorySize
-{
++ (long long)getTotalMemorySize {
     return [NSProcessInfo processInfo].physicalMemory;
 }
 
 /// 获取当前可用内存
-+ (long long)getAvailableMemorySize
-{
++ (long long)getAvailableMemorySize{
     vm_statistics_data_t vmStats;
     mach_msg_type_number_t infoCount = HOST_VM_INFO_COUNT;
     kern_return_t kernReturn = host_statistics(mach_host_self(), HOST_VM_INFO, (host_info_t)&vmStats, &infoCount);
-    if (kernReturn != KERN_SUCCESS)
-    {
+    if (kernReturn != KERN_SUCCESS) {
         return NSNotFound;
     }
 
@@ -200,8 +187,7 @@
 }
 
 /// 获取精准电池电量
-+ (CGFloat)getCurrentBatteryLevel
-{
++ (CGFloat)getCurrentBatteryLevel {
     UIApplication *app = [UIApplication sharedApplication];
     if (app.applicationState == UIApplicationStateActive||app.applicationState==UIApplicationStateInactive) {
         Ivar ivar=  class_getInstanceVariable([app class],"_statusBar");
@@ -230,8 +216,7 @@
 }
 
 /// 获取电池当前的状态，共有4种状态
-+ (nullable NSString *)getBatteryState
-{
++ (nullable NSString *)getBatteryState {
     UIDevice *device = [UIDevice currentDevice];
     if (device.batteryState == UIDeviceBatteryStateUnknown) {
         return @"UnKnow";
@@ -246,8 +231,7 @@
 }
 
 /// 获取当前语言
-+ (nullable NSString *)getDeviceLanguage
-{
++ (nullable NSString *)getDeviceLanguage {
     return [NSLocale preferredLanguages].firstObject;
 }
 

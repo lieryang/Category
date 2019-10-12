@@ -24,8 +24,7 @@
 #define ROUNDUP(a) \
 ((a) > 0 ? (1 + (((a) - 1) | (sizeof(long) - 1))) : sizeof(long))
 
-int getLocalIP(in_addr_t * addr)
-{
+int getLocalIP(in_addr_t * addr) {
     int mib[] = {CTL_NET, PF_ROUTE, 0, AF_INET,
         NET_RT_FLAGS, RTF_GATEWAY};
     size_t l;
@@ -79,8 +78,7 @@ int getLocalIP(in_addr_t * addr)
 
 
 
-unsigned char * getdefaultgateway(in_addr_t * addr)
-{
+unsigned char * getdefaultgateway(in_addr_t * addr) {
     unsigned char * octet=malloc(4);
 #if 0
     /* net.route.0.inet.dump.0.0 ? */

@@ -9,8 +9,7 @@
 #import "UIImage+EYAddition.h"
 
 @implementation UIImage (EYAddition)
-- (UIImage *)changImageWithSize:(CGSize)size withBackgroundColor:(UIColor *)backgroundColor withLineColor:(UIColor *)lineColor
-{
+- (UIImage *)changImageWithSize:(CGSize)size withBackgroundColor:(UIColor *)backgroundColor withLineColor:(UIColor *)lineColor {
     CGFloat width = size.width;
     CGFloat height = size.height;
     

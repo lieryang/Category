@@ -10,122 +10,101 @@
 #import <CommonCrypto/CommonCrypto.h>
 
 @implementation NSString (EYAddition)
+
 #pragma mark - BASE 64
-- (NSString *)ey_base64Encode
-{
+- (NSString *)ey_base64Encode {
     NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
     
     return [data base64EncodedStringWithOptions:0];
 }
 
-- (NSString *)ey_base64Decode
-{
+- (NSString *)ey_base64Decode {
     NSData *data = [[NSData alloc] initWithBase64EncodedString:self options:0];
     
     return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 }
 
 #pragma mark - 散列函数
-- (NSString *)ey_md5String
-{
+- (NSString *)ey_md5String {
     const char *str = self.UTF8String;
     uint8_t buffer[CC_MD5_DIGEST_LENGTH];
-    
     CC_MD5(str, (CC_LONG)strlen(str), buffer);
     
     return [self stringFromBytes:buffer length:CC_MD5_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_sha1String
-{
+- (NSString *)ey_sha1String {
     const char *str = self.UTF8String;
     uint8_t buffer[CC_SHA1_DIGEST_LENGTH];
-    
     CC_SHA1(str, (CC_LONG)strlen(str), buffer);
     
     return [self stringFromBytes:buffer length:CC_SHA1_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_sha224String
-{
+- (NSString *)ey_sha224String {
     const char *str = self.UTF8String;
     uint8_t buffer[CC_SHA224_DIGEST_LENGTH];
-    
     CC_SHA224(str, (CC_LONG)strlen(str), buffer);
-    
+
     return [self stringFromBytes:buffer length:CC_SHA224_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_sha256String
-{
+- (NSString *)ey_sha256String {
     const char *str = self.UTF8String;
     uint8_t buffer[CC_SHA256_DIGEST_LENGTH];
-    
     CC_SHA256(str, (CC_LONG)strlen(str), buffer);
-    
+
     return [self stringFromBytes:buffer length:CC_SHA256_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_sha384String
-{
+- (NSString *)ey_sha384String {
     const char *str = self.UTF8String;
     uint8_t buffer[CC_SHA384_DIGEST_LENGTH];
-    
     CC_SHA384(str, (CC_LONG)strlen(str), buffer);
-    
+
     return [self stringFromBytes:buffer length:CC_SHA384_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_sha512String
-{
+- (NSString *)ey_sha512String {
     const char *str = self.UTF8String;
     uint8_t buffer[CC_SHA512_DIGEST_LENGTH];
-    
     CC_SHA512(str, (CC_LONG)strlen(str), buffer);
-    
+
     return [self stringFromBytes:buffer length:CC_SHA512_DIGEST_LENGTH];
 }
 
 #pragma mark - HMAC 散列函数
-- (NSString *)ey_hmacMD5StringWithKey:(NSString *)key
-{
+- (NSString *)ey_hmacMD5StringWithKey:(NSString *)key {
     const char *keyData = key.UTF8String;
     const char *strData = self.UTF8String;
     uint8_t buffer[CC_MD5_DIGEST_LENGTH];
-    
     CCHmac(kCCHmacAlgMD5, keyData, strlen(keyData), strData, strlen(strData), buffer);
-    
+
     return [self stringFromBytes:buffer length:CC_MD5_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_hmacSHA1StringWithKey:(NSString *)key
-{
+- (NSString *)ey_hmacSHA1StringWithKey:(NSString *)key {
     const char *keyData = key.UTF8String;
     const char *strData = self.UTF8String;
     uint8_t buffer[CC_SHA1_DIGEST_LENGTH];
-    
     CCHmac(kCCHmacAlgSHA1, keyData, strlen(keyData), strData, strlen(strData), buffer);
-    
+
     return [self stringFromBytes:buffer length:CC_SHA1_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_hmacSHA256StringWithKey:(NSString *)key
-{
+- (NSString *)ey_hmacSHA256StringWithKey:(NSString *)key {
     const char *keyData = key.UTF8String;
     const char *strData = self.UTF8String;
     uint8_t buffer[CC_SHA256_DIGEST_LENGTH];
-    
     CCHmac(kCCHmacAlgSHA256, keyData, strlen(keyData), strData, strlen(strData), buffer);
     
     return [self stringFromBytes:buffer length:CC_SHA256_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_hmacSHA512StringWithKey:(NSString *)key
-{
+- (NSString *)ey_hmacSHA512StringWithKey:(NSString *)key {
     const char *keyData = key.UTF8String;
     const char *strData = self.UTF8String;
     uint8_t buffer[CC_SHA512_DIGEST_LENGTH];
-    
     CCHmac(kCCHmacAlgSHA512, keyData, strlen(keyData), strData, strlen(strData), buffer);
     
     return [self stringFromBytes:buffer length:CC_SHA512_DIGEST_LENGTH];
@@ -135,8 +114,7 @@
 
 #define FileHashDefaultChunkSizeForReadingData 4096
 
-- (NSString *)ey_fileMD5Hash
-{
+- (NSString *)ey_fileMD5Hash {
     NSFileHandle *fp = [NSFileHandle fileHandleForReadingAtPath:self];
     if (fp == nil) {
         return nil;
@@ -164,8 +142,7 @@
     return [self stringFromBytes:buffer length:CC_MD5_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_fileSHA1Hash
-{
+- (NSString *)ey_fileSHA1Hash {
     NSFileHandle *fp = [NSFileHandle fileHandleForReadingAtPath:self];
     if (fp == nil) {
         return nil;
@@ -221,8 +198,7 @@
     return [self stringFromBytes:buffer length:CC_SHA256_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_fileSHA512Hash
-{
+- (NSString *)ey_fileSHA512Hash {
     NSFileHandle *fp = [NSFileHandle fileHandleForReadingAtPath:self];
     if (fp == nil) {
         return nil;
@@ -250,30 +226,26 @@
     return [self stringFromBytes:buffer length:CC_SHA512_DIGEST_LENGTH];
 }
 
-- (NSString *)ey_appendDocumentDirectory
-{
-    NSString *dir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
+- (NSString *)ey_appendDocumentDirectory {
+    NSString *directory = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
     
-    return [dir stringByAppendingPathComponent:self.lastPathComponent];
+    return [directory stringByAppendingPathComponent:self.lastPathComponent];
 }
 
-- (NSString *)ey_appendCacheDirectory
-{
-    NSString *dir = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
+- (NSString *)ey_appendCacheDirectory {
+    NSString *directory = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
     
-    return [dir stringByAppendingPathComponent:self.lastPathComponent];
+    return [directory stringByAppendingPathComponent:self.lastPathComponent];
 }
 
-- (NSString *)ey_appendTempDirectory
-{
-    NSString *dir = NSTemporaryDirectory();
+- (NSString *)ey_appendTempDirectory {
+    NSString *directory = NSTemporaryDirectory();
     
-    return [dir stringByAppendingPathComponent:self.lastPathComponent];
+    return [directory stringByAppendingPathComponent:self.lastPathComponent];
 }
 
 #pragma mark - 助手方法
-- (NSString *)stringFromBytes:(uint8_t *)bytes length:(int)length
-{
+- (NSString *)stringFromBytes:(uint8_t *)bytes length:(int)length {
     NSAssert(sizeof(bytes) >= length, @"length过长");
     
     NSMutableString *strM = [NSMutableString string];
